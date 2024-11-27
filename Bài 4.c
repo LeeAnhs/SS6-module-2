@@ -2,16 +2,17 @@
 #include <math.h>
 
 int main() {
+    //khai bao bien
     float a, b, c; 
     float delta, x1, x2;
-
+    //nhap du lieu
     printf("Nhap a: ");
     scanf("%f", &a);
     printf("Nhap b: ");
     scanf("%f", &b);
     printf("Nhap c: ");
     scanf("%f", &c);
-
+    //kiem tra a,b,b
     if (a == 0) {
         if (b == 0) {
             printf("Phuong trinh vo nghiem.\n");
@@ -19,6 +20,7 @@ int main() {
             printf("Phuong trinh co 1 nghiem: x = %.2f\n", (-c / b));
         }
     } else {
+        //tinh delta va in ra man hinh
         delta = b * b - 4 * a * c;
         if (delta > 0) {
             x1 = (-b + sqrt(delta)) / (2 * a);
